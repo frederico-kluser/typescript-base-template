@@ -7,7 +7,8 @@
   "scripts": {
     "lint": "pretty-quick --staged && lint-staged",
     "build": "rm -rf build && tsc",
-    "dev": "ts-node-dev --transpileOnly --no-notify --clear src"
+    "dev": "ts-node-dev --transpileOnly --no-notify --clear src",
+    "preinstall": "npx use-yarn -m 'USE YARN OR DIE !!'"
   },
   "keywords": [],
   "license": "ISC",
@@ -22,9 +23,11 @@
     "eslint-plugin-prettier": "^3.1.2",
     "husky": ">=4",
     "lint-staged": ">=10",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
     "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "use-yarn": "^2.2.0"
   },
   "husky": {
     "hooks": {
